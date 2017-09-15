@@ -1,0 +1,18 @@
+html{
+	background-color: rgb(177,200,237);
+}
+h1{
+	color:black;
+	font-size:30;
+	text-align:center;
+}
+#border{
+	font-size:30;
+}
+p, h1, fieldset{
+	font-family: Arial;
+}
+#heading{
+	color: white;
+}
+

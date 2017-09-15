@@ -1,16 +1,26 @@
 <html>
 <head>
-	<h1>Christina Williams</h1>
-	<h3> cmw78@duke.edu </h3>
-	<a href = "https://www.linkedin.com/in/christina-w-4a22388a/"> LinkdIn </a>
-	<hr />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title> Christina Williams </title>
+
 
 </head>
-<h2> About Me </h2>
-<p> I am a current Senior at Duke University, studying Computer Science. </p>
+<body>
+	<h1>Christina Williams</h1>
+	<h3> cmw78@duke.edu </h3>
+	<strong> Duke University </strong>
+	<h2> Birthday: May 5<sup>th</sup> </h2>
+</br>
+	<a href = "https://www.linkedin.com/in/christina-w-4a22388a/"> LinkdIn </a>
+	<hr />
+<fieldset>
+	<legend id="border"> About Me </legend>
+<p> I am a current <b>Senior</b> at Duke University, studying <i>Computer Science</i>. </p>
+</fieldset>
 <img src="https://i.pinimg.com/736x/bb/31/c5/bb31c5729ab35d5cf16ea0b141c98fbb--duke-university-duke-blue-devils.jpg" height = "200" width="200" align="right"/>
 
-<h2> Experiences </h2>
+<fieldset>
+<legend id="border"> Experiences </legend>
 <ul>
 	<li> United Health Group Technology Development Program</li>
 		<ul>
@@ -18,7 +28,9 @@
 			<li> Created a mobile app builder to generate customizable patient portals </li>
 		</ul>
 </ul>
-<h2> Coursework </h2>
+</fieldset>
+<fieldset>
+<legend id="border"> Coursework </legend>
 <ul>
 	<li> CS310: Operating Systems </li>
 	<li> CS230: Discrete Mathematics for Computer Science </li>
@@ -32,6 +44,7 @@
 
 
 </ul>
+</fieldset>
 
 <table>
 	<tr>
@@ -48,45 +61,50 @@
 	</tr>
 </table>
 
-<p> Username:
-	<input type = "text" name="username" size="15" maxlength="30"/>
-</p> <p> Password:
-<input type="password" name="password" size="15" maxlength = "30"/>
-</br>
-<textarea name="comments" cols="30" rows="4"> Enter Comments </textarea>
-</br>
-<p> Please select your favorite genre of music: </p>
-<input type="radio" name = "genre" value="rock" checked="checked"/> Rock
-<input type="radio" name = "genre" value="pop" /> Pop
-<input type="radio" name = "genre" value="pop" /> Jazz
-</br>
-<p> Select which ice cream flavors you like: </p>
-<input type="checkbox" name = "icecream" value="chocolate"/> Chocolate
-<input type="checkbox" name = "icecream" value="vanilla"/> Vanilla
-<input type="checkbox" name = "icecream" value="vanilla"/> Mint Chocolate Chip
-</br>
-<p> Select Your Major: </p>
-<select name="Major" size="5" multiple="multiple"/>
-<option value="Computer Science"> Computer Science </option>
-<option value="Public Policy"> Public Policy </option>
-</select>
-</br>
-<p> Select Your Major: </p>
-<select name="Major" />
-<option value="Computer Science"> Computer Science </option>
-<option value="Public Policy"> Public Policy </option>
-</select>
+<fieldset>
+		<legend> Contact Me: </legend>
+	<p> Name:
+		<input type="text" name= "name" size = "15" maxlength="30"/>
+		</p></p> Email:
+		<input type="text" name="email" size="15" maxlength="30"/>
+		</p>
+		<p> Phone Number:
+		<input type="text" name="phone" size="15" maxlength="30"/></p>
 
-<input type="file" name="user-song"/>
-<br>
-<input type="submit" value="Upload"/>
-<input type="text" name="email"/>
-<input type="image" src="images/subscribe.jpg" width="100" />
+		<p> Message: </p>
+	<textarea name="comments" cols="30" rows="4">  </textarea>
+	</br>
+		<p> What is the best way to contact you?</p>
+		<input type="radio" name="answer" value="phone"/> Phone
+		<input type="radio" name="answer" value="email"/> Email
+		<input type="radio" name="answer" value="no"/> Do Not Contact Me
+	</br>
+	</fieldset>
+	</br>
+	<fieldset>
+		<legend> Your Review: </legend>
+	<p> How did you hear about us?
+		<select name="hear">
+			<option value="Google"> Google </option>
+		</select>
+	</p>
+	<p> Would you visit again?</p>
+		<input type="radio" name="answer" value="yes"/> Yes
+		<input type="radio" name="answer" value="no"/> No
+		<input type="radio" name="answer" value="maybe"/> Maybe
+	</br>
+	<p> Comments: </p>
+	<textarea name="comments" cols="30" rows="4">  </textarea>
+	</br>
+	<input type="checkbox" name="emailUpdates" value="yes" checked="checked"/> Sign me up for email updates.
+	</br>
+	<button type="button"> Submit Review </button>
+	</fieldset>
 
 
 
 
 
 </p>
-
+</body>
 </html>

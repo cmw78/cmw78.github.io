@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title> Forms </title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<h1> This is a basic form. </h1>
+	<fieldset>
+		<legend> Your Details: </legend>
+	<p> Name:
+		<input type="text" name= "name" size = "15" maxlength="30"/>
+		</p></p> Email:
+		<input type="text" name="email" size="15" maxlength="30"/>
+		</p>
+	</fieldset>
+	</br>
+	<fieldset>
+		<legend> Your Review: </legend>
+	<p> How did you hear about us?
+		<select name="hear">
+			<option value="Google"> Google </option>
+		</select>
+	</p>
+	<p> Would you visit again?</p>
+		<input type="radio" name="answer" value="yes"/> Yes
+		<input type="radio" name="answer" value="no"/> No
+		<input type="radio" name="answer" value="maybe"/> Maybe
+	</br>
+	<p> Comments: </p>
+	<textarea name="comments" cols="30" rows="4">  </textarea>
+	</br>
+	<input type="checkbox" name="emailUpdates" value="yes" checked="checked"/> Sign me up for email updates.
+	</br>
+	<button type="button"> Submit Review </button>
+	</fieldset>
+	</body>
+</html>
+
