@@ -41,6 +41,7 @@ p, h1, fieldset{
 .bg{
 	background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-background-26046-26731-hd-wallpapers.jpg.png");
 	height: 1500px;
+    width: 1000px;
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
