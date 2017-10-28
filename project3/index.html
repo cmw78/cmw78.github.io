@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="style.css"/>  
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+	<h1> Introduction to Javascript </h1>
+	<h1 id="output2"></h1>
+
+
+    
+
+<script language="JavaScript">
+var param = document.getElementById("input1");
+
+function expression(){
+	var x = document.getElementById('input1').value;
+	console.log(x);
+	var output = 5*x - 3*Math.pow(x,2)+13;
+	console.log(output);
+	document.getElementById('output1').innerHTML = 'Answer: ' + output;
+}
+
+function strings(){
+	var a = document.getElementById('stringA').value;
+	var b = document.getElementById('stringB').value;
+	var c = document.getElementById('stringC').value;
+	var output2 = 'Hello, ' +a + ' ' + b + ' ' + c + '!';
+	document.getElementById('output2').innerHTML = output2;
+}
+
+function fruits(){
+	var x=document.getElementById('x').value;
+	var y = document.getElementById('y').value;
+	if(x>y){
+		var output3 = 'bananas';
+		color='#DBDB28';
+	}
+	else if (y>x){
+		var output3 = 'porcupine';
+		color='brown';
+	}
+	else if((x===y)&& (x<0 && y<0)){
+		var output3 = 'red apples';
+		color = 'red';
+	}
+	else{
+		var output3 = 'green apples';
+		color = 'green';
+	}
+
+	document.getElementById('output3').innerHTML = output3;
+		document.getElementById('output3').style.color = color;
+
+}
+
+function validPhone(){
+	var num = document.getElementById('number').value;
+	var clean = num.replace(/\D/g, '');
+	if(clean.length===11 && Number(clean.charAt(0))===1){
+			var output = 'valid';
+			color='green';
+	}
+	else if (clean.length===10){
+			var output = 'valid';
+			color='green';
+		}
+	
+	else {
+		var output='invalid';
+		color='red';
+
+	}
+	var val = Number(clean);
+	document.getElementById('output4').innerHTML = output;
+	document.getElementById('output4').style.color = color;
+}
+
+function list(){
+	var text = document.getElementById('list').value;
+	var split = text.split(",");
+	var output = split[2];
+	document.getElementById('output5').innerHTML = output;
+}
+
+function changeColor(num){
+	var vals = ['0','1','2','3','4']
+	for(var i=0; i<5; i++){
+		console.log(i);
+		document.getElementById(vals[i]).style.backgroundColor='white';
+	}
+	//console.log(num);
+	var index = num+1;
+	if(index!=5){
+		document.getElementById(vals[index]).style.backgroundColor='blue';
+	}
+	else{
+		for(var i=0; i<5; i++){
+			console.log(i);
+			document.getElementById(vals[i]).style.backgroundColor='red';
+	}	}
+	//console.log(vals[index]);
+}
+
+
+
+</script>
+</body>
+<fieldset>
+	<legend> Problem 1 </legend>
+<p> Please input a value of "x" for the equation f(x)=5x -3x<sup>2</sup> + 13 </p>
+<input type="number" id="input1" name="x"/>
+<button onclick='expression()'> Calculate </button>
+<p id="output1"></p>
+</fieldset>
+
+<fieldset>
+<legend> Problem 2</legend>
+<p> Please input 3 strings </p>
+<input type="text" id="stringA" name="stringA"/>
+<input type="text" id="stringB" name="stringB"/>
+<input type="text" id="stringC" name="stringC"/>
+
+<button onclick='strings()'> Enter </button>
+</fieldset>
+
+<fieldset>
+<legend> Problem 3</legend>
+<p> Please input 2 numbers </p>
+x: <input type="number" id="x" name="x"/> 
+y: <input type="number" id="y" name="y"/>
+
+<button onclick='fruits()'> Enter </button>
+<p id="output3"></p>
+</fieldset>
+
+<fieldset>
+<legend> Problem 4</legend>
+<p> Please input a phone number </p>
+Phone Number: <input type="text" id="number" name="number"/> 
+
+<button onclick='validPhone()'> Check if Valid </button>
+<p id="output4"></p>
+</fieldset>
+
+<fieldset>
+<legend> Problem 5</legend>
+<p> Please input a comma separated list. </p>
+List: <input type="text" id="list" name="list"/> 
+
+<button onclick='list()'> Print Third Item </button>
+<p id="output5"></p>
+</fieldset>
+
+<fieldset>
+<legend> Problem 6</legend>
+<p> If you hit any of the first four buttons, the next button will turn blue. Presssing the fifth button sets all buttons to red. </p>
+<button id='0' onclick='changeColor(0)'></button>
+
+<button id='1' onclick='changeColor(1)'></button>
+
+<button id='2'onclick='changeColor(2)'></button>
+
+<button id='3'onclick='changeColor(3)'></button>
+
+<button id='4'onclick='changeColor(4)'></button>
+</fieldset>
+
+
+
+
+</body>
+</html> 

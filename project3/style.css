@@ -1,0 +1,43 @@
+body{
+    font-family: Oswald;
+    height=100%
+
+}
+
+h1{
+    text-align:center;
+}
+
+.title {
+    
+    font-size: 80;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 15%; 
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.content {
+    
+    font-size: 20;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 35%; 
+    left: 10%;
+    right: 0;
+    height:100%;
+    text-align: left;
+}
+
+
+.bg{
+    height: 1500px;
+    width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
