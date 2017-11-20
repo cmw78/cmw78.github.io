@@ -17,7 +17,7 @@ function newElement(){
  var input = $('#items').val();
  var split = input.split(',');
  console.log(split);
- $.post('https://cmw78.github.io/project4/output.txt', input);
+ $.post('https://cmw78.github.io' + '/project4/output.txt', input);
 
 
 };
