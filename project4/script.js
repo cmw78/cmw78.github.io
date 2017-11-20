@@ -18,8 +18,8 @@ function newElement(){
  var split = input.split(',');
  console.log(split);
  console.log(baseURL);
- console.log(baseURL+ 'output.txt');
- $.post(baseURL+ 'output.txt', input);
+ console.log(baseURL+ 'project4/output.txt');
+ $.post(baseURL+ 'project4/output.txt', input);
 
 
 };
