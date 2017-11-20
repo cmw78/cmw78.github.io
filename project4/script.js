@@ -17,6 +17,8 @@ function newElement(){
  var input = $('#items').val();
  var split = input.split(',');
  console.log(split);
+ console.log(baseURL);
+ console.log(baseURL+ '/output.txt');
  $.post(baseURL+ '/output.txt', input);
 
 
