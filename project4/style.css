@@ -1,0 +1,105 @@
+body{
+	font-family: Oswald;
+    height=100%
+
+}
+
+.title {
+    
+    font-size: 80;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 15%; 
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.content {
+    
+    font-size: 20;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 35%; 
+    left: 10%;
+    right: 0;
+    height:100%;
+    text-align: left;
+}
+
+.image{
+    margin: 30px 0px 30px 0px;
+}
+#border{
+    font-size:30;
+}
+p, h1, fieldset{
+    font-family: Arial;
+}
+
+
+.bg{
+	background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-background-26046-26731-hd-wallpapers.jpg.png");
+	height: 1500px;
+    width: 1000px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    top: 20;
+    left: 50%;
+    margin-left: -150;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.navbar a {
+    display: inline-block;
+    float: left;
+    width: 60px;
+    padding: 0 20;
+    color: rgba(255,255,255,0.7);  
+    text-decoration: none;
+    
+}
+
+.navbar a:hover {
+    color: rgba(255,255,255,0.9);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+
+.box{
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    justify-content:center;
+    font-size:30px;
+    text-align: center;
+}
+
+.boxheader{
+    font-size: 30px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+.box2{
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    justify-content:center;
+    font-size:20px;
+    text-align: left;
+}
