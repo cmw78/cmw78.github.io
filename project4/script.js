@@ -18,7 +18,7 @@ function newElement(){
  var split = input.split(',');
  console.log(split);
  console.log(baseURL);
- $.post(baseURL+ 'project4' + 'output.txt', input);
+ $.post('https://cmw78.github.io/project4/output.txt', input);
 
 
 };
