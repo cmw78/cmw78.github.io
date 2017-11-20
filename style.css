@@ -1,18 +1,43 @@
-html{
-	background-color: rgb(177,200,237);
+body{
+    font-family: Oswald;
+    height=100%
+
 }
+
 h1{
-	color:black;
-	font-size:30;
-	text-align:center;
+    text-align:center;
 }
-#border{
-	font-size:30;
+
+.title {
+    
+    font-size: 80;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 15%; 
+    left: 0;
+    right: 0;
+    text-align: center;
 }
-p, h1, fieldset{
-	font-family: Arial;
+.content {
+    
+    font-size: 20;
+    color: white;
+    letter-spacing: 2;
+    position: absolute;
+    top: 35%; 
+    left: 10%;
+    right: 0;
+    height:100%;
+    text-align: left;
 }
-#heading{
-	color: white;
+
+
+.bg{
+    height: 1500px;
+    width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
